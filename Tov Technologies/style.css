@@ -1,0 +1,1046 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    width: 100%;
+    padding: 1rem 1;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .navbar-brand {
+        margin-right: auto;
+    }
+    
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+
+
+/* Existing styles remain the same */
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f8fa;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.hero h2 {
+    color: #444444;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.hero .btn-get-started {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    text-decoration: none;
+}
+
+.hero .btn-get-started:hover {
+    background: #5969f3;
+}
+
+.hero .btn-get-started i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero .btn-get-started:hover i {
+    transform: translateX(5px);
+}
+
+.hero-img {
+    text-align: right;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered fade-in for hero elements */
+.hero h1 {
+    animation-delay: 0.3s;
+}
+
+.hero h2 {
+    animation-delay: 0.6s;
+}
+
+.hero .btn-get-started {
+    animation-delay: 0.9s;
+}
+
+.hero-img {
+    animation-delay: 1.2s;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #012970;
+}
+
+.section-header h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #4154f1;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.section-header p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.feature-box {
+    padding: 30px;
+    box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.feature-box i {
+    line-height: 0;
+    background: #ecf3ff;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+    border-radius: 3px;
+    transition: 0.3s;
+    color: #012970;
+}
+
+.feature-box:hover {
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.feature-box:hover i {
+    background: #4154f1;
+    color: #fff;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("images/call.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta .cta-btn {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta .cta-btn:hover {
+    background: #4154f1;
+    border: 2px solid #4154f1;
+}
+
+
+/* Add these styles to your existing style.css file */
+
+/* About Us Hero Section */
+.about-hero {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #f7f8fa;
+    padding: 60px 0;
+}
+
+.about-hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.about-hero p {
+    color: #444444;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Company Overview Section */
+.overview {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.overview h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #012970;
+}
+
+.mission-vision {
+    background-color: #f6f9ff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.mission-vision h3 {
+    font-size: 24px;
+    color: #012970;
+    margin-bottom: 15px;
+}
+
+/* Team Section */
+.team {
+    padding: 80px 0;
+    background-color: #f7f8fa;
+    text-align: center;
+}
+
+.section-header.text-center {
+    text-align: center;
+}
+
+.team .member {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team .member:hover {
+    transform: translateY(-5px);
+}
+
+.team .member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .member .member-info {
+    padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #012970;
+}
+
+.team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.row.justify-content-center {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .team .member {
+        margin-bottom: 30px;
+    }
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Timeline Section */
+.timeline {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.timeline-items {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #4154f1;
+    left: calc(50% - 1px);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background-color: #4154f1;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-size: 18px;
+    color: #4154f1;
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: #f6f9ff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: #012970;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: #6c757d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+
+/* Add these styles to your existing style.css file */
+
+/* Services Hero Section */
+.services-hero {
+    width: 100%;
+    min-height: 40vh;
+    background-color: #f7f8fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.services-hero p {
+    color: #444444;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Services Overview Section */
+.services-overview {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.service-item {
+    margin-bottom: 40px;
+}
+
+.service-box {
+    box-shadow: 0 0 30px rgba(1, 41, 112, 0.08);
+    height: 100%;
+    padding: 60px 30px;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.service-box:hover {
+    box-shadow: 0 0 30px rgba(1, 41, 112, 0.15);
+}
+
+.service-box i {
+    font-size: 40px;
+    color: #4154f1;
+    margin-bottom: 30px;
+}
+
+.service-box h3 {
+    font-size: 24px;
+    color: #012970;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.service-box .read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #4154f1;
+    border: 1px solid #4154f1;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.service-box .read-more:hover {
+    background-color: #4154f1;
+    color: #fff;
+}
+
+/* Detailed Service Section */
+.detailed-service {
+    padding: 80px 0;
+    background-color: #f7f8fa;
+}
+
+.detailed-service h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #012970;
+}
+
+.detailed-service p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #444444;
+}
+
+.detailed-service ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.detailed-service ul li {
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+/* Call to Action Section (already defined in previous styles) */
+
+
+/* Add these styles to your existing style.css file */
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+    width: 100%;
+    min-height: 40vh;
+    background-color: #f7f8fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.portfolio-hero p {
+    color: #444444;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.portfolio #portfolio-filters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.portfolio #portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #444444;
+    margin: 0 4px 8px 4px;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
+    color: #4154f1;
+    border-color: #4154f1;
+}
+
+.portfolio .portfolio-container {
+    padding-top: 30px;
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(1, 41, 112, 0.1);
+}
+
+.portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.portfolio .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-info h4 {
+    font-size: 20px;
+    color: #012970;
+    font-weight: 700;
+}
+
+.portfolio .portfolio-info p {
+    color: #012970;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+    top: calc(50% - 48px);
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    background: #4154f1;
+    margin: 0 5px;
+    font-size: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: #5969f3;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: calc(50% - 48px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background-color: #f7f8fa;
+}
+
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px;
+    margin: 40px 30px;
+    box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+    background: #fff;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #4154f1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #4154f1;
+}
+
+
+/* Contact Hero Section */
+.contact-hero {
+    width: 100%;
+    min-height: 40vh;
+    background-color: #f7f8fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.contact-hero p {
+    color: #444444;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.contact .info-box {
+    color: #444444;
+    background: #fafbff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact .info-box i {
+    font-size: 38px;
+    line-height: 0;
+    color: #4154f1;
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #012970;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact .php-email-form {
+    background: #fafbff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact .php-email-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+    border: 1px solid #e4e4e4;
+    padding: 10px 15px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #4154f1;
+}
+
+.contact .php-email-form button[type="submit"] {
+    background: #4154f1;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: #5969f3;
+}
+
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#back-to-top:active {
+    transform: translateY(0);
+}
+
+/* You can remove or comment out this part since we don't need the fade-in animation anymore */
+/*
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#back-to-top.show {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+*/
+
+
+
+
+
+
+/* Footer */
+.footer {
+    background: #f6f9ff;
+    padding: 0 0 30px 0;
+    font-size: 14px;
+}
+
+.footer .footer-top {
+    background: #f7f8fa;
+    border-top: 1px solid #e1ecff;
+    border-bottom: 1px solid #e1ecff;
+    padding: 60px 0 30px 0;
+}
+
+.footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-info .logo {
+    line-height: 0;
+    margin-bottom: 15px;
+}
+
+.footer .footer-top .footer-info .logo span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+    margin-top: 3px;
+}
+
+.footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.footer .footer-top .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    color: rgba(1, 41, 112, 0.5);
+    line-height: 0;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+    color: #012970;
+}
+
+.footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #012970;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #d0d4fc;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+    color: #013289;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-top .footer-links ul a:hover {
+    color: #4154f1;
+}
+
+.footer .footer-top .footer-contact p {
+    line-height: 26px;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
